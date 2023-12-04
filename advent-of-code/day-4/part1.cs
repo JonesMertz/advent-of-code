@@ -62,7 +62,7 @@ namespace program
                 }
                 sum += rowSum;
             }
-            Console.WriteLine(sum);
+            Console.WriteLine("Part One Result: " + sum);
         }
         public static void PartTwo()
         {
@@ -125,7 +125,7 @@ namespace program
                 sum += rowSum;
                 cardIndex++;
             }
-            Console.WriteLine(cardCopies.Sum());
+            Console.WriteLine("Part Two Result: " + cardCopies.Sum());
         }
     }
 }
