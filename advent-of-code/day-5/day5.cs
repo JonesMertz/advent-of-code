@@ -1,28 +1,13 @@
-﻿using System.IO;
+using System.IO;
 using System.Linq;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 namespace program
 {
-    class Program
+    class Day5
     {
-        static void Main(string[] args)
-        {
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
-            PartOne();
-            sw.Stop();
-            Console.WriteLine("Part One Elapsed={0} ms", sw.ElapsedMilliseconds);
-
-            sw.Reset();
-            sw.Start();
-            PartTwo();
-            sw.Stop();
-            Console.WriteLine("Part Two Elapsed={0} ms", sw.ElapsedMilliseconds);
-        }
-
-        public static void PartOne()
+        public void PartOne()
         {
             using StreamReader sr = new StreamReader("../../../day-4/input.txt");
             string line;
@@ -64,7 +49,7 @@ namespace program
             }
             Console.WriteLine("Part One Result: " + sum);
         }
-        public static void PartTwo()
+        public void PartTwo()
         {
             using StreamReader sr = new StreamReader("../../../day-4/input.txt");
             string line;
