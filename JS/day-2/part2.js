@@ -1,9 +1,5 @@
-const { prototype } = require('events');
 const fs = require('fs');
 const rawGames = fs.readFileSync(__dirname + '/input-values.txt').toString().split('\n')
-//const gameIDs = rawGames.split(":").map(x => parseInt(x[0].replace("Game ", "")));
-//const gameParsed = rawGames.split(":").map(x => x[1].split(";"));
-
 
 String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
@@ -56,5 +52,5 @@ for (let i = 0; i < rawGames.length; i++) {
     })
     sum += gameCounter.getProductOfMinimumRequired();
 }
-console.log(sum);
 
+console.log(sum);
